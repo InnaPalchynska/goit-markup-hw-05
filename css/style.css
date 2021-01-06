@@ -7,6 +7,8 @@
   --accent-bg-color: #2f303a;
   --primary-font-family: 'Roboto', sans-serif;
   --logo-font-family: 'Raleway', sans-serif;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-time: 250ms;
 }
 
 body {
@@ -113,8 +115,6 @@ img {
 
 /* site-nav */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -137,6 +137,10 @@ img {
 }
 
 .site-nav .link {
+  position: relative;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
   display: inline-flex;
 
   color: var(--title-text-color);
@@ -156,6 +160,20 @@ img {
 
 .current.link {
   color: var(--accent-color);
+}
+
+.current::after {
+  content: ' ';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts .link {
