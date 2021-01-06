@@ -308,6 +308,7 @@ img {
 }
 
 .work .overlay {
+  display: inline-flex;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   align-items: center;
@@ -549,13 +550,16 @@ address {
 }
 
 .portfolio .overlay {
+  display: inline-flex;
   height: 294px;
+  vertical-align: center;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--animation-time) var(--animation-timing-function);
 }
 
 .overlay-description {
+  display: block;
   margin: auto;
   width: 322px;
   height: 168px;
