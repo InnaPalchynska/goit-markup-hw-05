@@ -451,8 +451,7 @@ img {
   border-radius: 50%;
   color: #afb1b8;
 
-  transition-property: color;
-  transition-property: background-color;
+  transition-property: color background-color;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
 }
@@ -486,8 +485,7 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition-property: border;
-  transition-property: color;
+  transition-property: border color;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
 }
@@ -589,8 +587,7 @@ address {
 
   cursor: pointer;
 
-  transition-property: color;
-  transition-property: background-color;
+  transition-property: color background-color;
   transition-duration: var(--animation-time);
   transition-timing-function: var(--animation-timing-function);
 }
